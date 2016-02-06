@@ -1,6 +1,8 @@
 # https://pythonhosted.org/setuptools/setuptools.html#namespace-packages
 __import__('pkg_resources').declare_namespace(__name__)
 
+import codecs
+
 # please put me in a library somewhere...
 # please to be porting this at the same time...
 # https://github.com/exflickr/flamework/blob/master/www/include/lib_sanitize.php
@@ -8,6 +10,11 @@ __import__('pkg_resources').declare_namespace(__name__)
 
 # I have put this in its own library! And next I will port lib_sanitize.php.
 # (20160204/dphiffer)
+
+'''
+
+We are going to make an abstract pony factory for this some day.
+(20160205/dphiffer)
 
 def get_param(k, sanitize=None):
 
@@ -42,6 +49,8 @@ def get_float(k):
 
     param = get_param(k, sanitize_float)
     return param
+	
+'''
 
 def sanitize_str(str):
 
