@@ -19,7 +19,7 @@ desc = open("README.md").read()
 
 setup(
     name='mapzen.whosonfirst.sanitize',
-    namespace_packages=['mapzen', 'mapzen.whosonfirst', 'mapzen.whosonfirst.sanitize'],
+    namespace_packages=['mapzen', 'mapzen.whosonfirst'],
     version=version,
     description='Who\'s on First felpers for safely accepting user input',
     author='Mapzen',
